@@ -1,6 +1,5 @@
 var pianoKeys = document.querySelectorAll('.keys');
-var preaudio = new Audio("sounds/dot.mp3");
-preaudio.preload = "auto";
+
 
 for (var i = 0; i < pianoKeys.length; i++) {
   pianoKeys[i].addEventListener("click", function() {
@@ -13,7 +12,8 @@ for (var i = 0; i < pianoKeys.length; i++) {
 
 function playKey(key) {
   if (key === ".") {
-    preaudio.play();
+    var audio = new Audio("sounds/dot.mp3");
+    audio.play();
   } else if (key === "/") {
     var audio = new Audio("sounds/slash.mp3");
     audio.play();
