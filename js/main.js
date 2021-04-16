@@ -1,4 +1,6 @@
 var pianoKeys = document.querySelectorAll('.keys');
+var preaudio = new Audio("sounds/dot.mp3");
+preaudio.preload = "auto";
 
 for (var i = 0; i < pianoKeys.length; i++) {
   pianoKeys[i].addEventListener("click", function() {
