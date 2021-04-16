@@ -13,8 +13,7 @@ for (var i = 0; i < pianoKeys.length; i++) {
 
 function playKey(key) {
   if (key === ".") {
-    var audio = new Audio("sounds/dot.mp3");
-    audio.play();
+    preaudio.play();
   } else if (key === "/") {
     var audio = new Audio("sounds/slash.mp3");
     audio.play();
